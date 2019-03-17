@@ -8,6 +8,7 @@ import Options from '../Options'
 import Changelog from '../Changelog'
 import Playoffs from '../Playoffs'
 import { BroadcastProvider, SettingsProvider, ThemeProvider  } from '../../components/Context'
+import {GlobalStyle} from '../../styles'
 
 import 'react-sticky-table/dist/react-sticky-table.css'
 import 'flatpickr/dist/flatpickr.min.css'
@@ -35,6 +36,7 @@ class App extends React.Component {
                                 <Route exact path="/standings" component={ Standings } />
                                 <Redirect path="*" to="/popup" />
                             </Switch>
+                            <GlobalStyle />
                         </AppBase>
                     </SettingsProvider>
                 </BroadcastProvider>

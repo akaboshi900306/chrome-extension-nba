@@ -1,6 +1,6 @@
-import styled, {injectGlobal, css} from 'styled-components'
+import styled, {css, createGlobalStyle} from 'styled-components'
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
     :root {
         --color: hsl(0, 0%, 15%);
         --bg-color: #e0e0e0;
