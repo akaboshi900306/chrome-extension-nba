@@ -7,7 +7,6 @@ import Standings from '../Standings'
 import Options from '../Options'
 import Changelog from '../Changelog'
 import Playoffs from '../Playoffs'
-import {GlobalStyle} from '../../styles'
 import {
     SidebarProvider,
     SettingsProvider,
@@ -42,7 +41,6 @@ class App extends React.Component {
                                     <Route exact path="/standings" component={ Standings } />
                                     <Redirect path="*" to="/popup" />
                                 </Switch>
-                                <GlobalStyle />
                             </AppBase>
                         </SettingsProvider>
                     </BoxScoreProvider>
